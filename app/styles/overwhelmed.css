@@ -1,0 +1,67 @@
+/* BASE STYLES */
+
+/* COLORS 
+-----------
+
+Orange: 	#ee5025
+Dark Gray: 	#282a24
+Light Gray: #32342D
+Cream:  	#EFF0D1
+
+BREAKPOINTS
+-----------
+
+Mobile 		460px and below
+Tablet 		1024–461px
+Desktop 	1200–1025px
+Stretch     ~ -1201px (see last slide in the .pdf for UI)
+
+*/
+
+h1 {
+	font-family: "Memphis", serif;
+	font-size: 60px
+	font-weight: bold;
+	line-height: 60px;
+	letter-spacing: 1px;
+}
+
+h2 {
+	color: #ee5025;
+	font-family: "Memphis", serif;
+	font-size: 50px
+	font-weight: bold;
+	line-height: 50px;
+	letter-spacing: 1px;
+}
+
+h3 { 
+	color: #282a24;
+	font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
+	font-size: 20px
+	font-weight: bold;
+	line-height: 30px;
+	letter-spacing: 7px;
+}
+
+p {
+	font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 22px
+	line-height: 30px;
+}
+
+a {
+	background: #282a24;
+	border: 5px solid #ee5025;
+	font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 28px
+	line-height: 30px;
+	padding: 10px 20px;
+}
+
+a:hover {
+	background: #ee5025;
+	border: 5px solid #ee5025;
+}
