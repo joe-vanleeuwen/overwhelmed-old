@@ -1,3 +1,10 @@
+@import "compass/css3";
+
+$orange:     #ee5025;
+$darkgray:   #282a24;
+$lightgray:  #32342D;
+$cream:      #EFF0D1;
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -21,7 +28,7 @@ time, mark, audio, video {
     border: 0;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline;
+    vertical-align: top;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -46,3 +53,417 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/* BASE STYLES */
+
+/* COLORS 
+-----------
+
+Orange:     #ee5025
+Dark Gray:  #282a24
+Light Gray: #32342D
+Cream:      #EFF0D1
+
+BREAKPOINTS
+-----------
+
+Mobile      460px and below
+Tablet      1024–461px
+Desktop     1200–1025px
+Stretch     ~ -1201px (see last slide in the .pdf for UI)
+
+*/
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham/Gotham-Medium.otf');
+    src: local('Gotham'), local('Gotham'), url('../fonts/Gotham/Gotham-Medium.otf') format('truetype');
+}
+
+body {
+    width: 100%;
+    font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
+
+}
+
+h1 {
+    font-family: "Memphis", serif;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 60px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #ee5025;
+    font-family: "Memphis", serif;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+
+h3 { 
+    color: #282a24;
+    font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 7px;
+}
+
+p {
+    font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*a {
+    background: #282a24;
+    border: 5px solid #ee5025;
+    font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 30px;
+    padding: 10px 20px;
+}*/
+
+a.orange-outline:hover {
+    color: $darkgray;
+    background: #ee5025;
+}
+
+
+
+
+/*@media (max-width: 460px)*/
+
+.temp {
+    width: 320px;
+    margin: 50px auto 0;
+}
+
+header {
+    height: 40px;
+    background: $orange;
+    position: relative;
+
+    .title {
+        font-size: 24px;
+        display: inline-block;
+        line-height: 43px;
+        margin-left: 10px;
+        text-transform: uppercase;
+    }
+
+    .hamburger {
+        width: 40px;
+        height: inherit;
+        background: $darkgray;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+
+        .meat {
+            height: 3px;
+            margin: 8px auto 0;
+            background: rgb(255, 255, 255);
+            width: 55%;
+        }
+    }
+}
+
+.wrapper {
+
+    .main-image {
+        height: 140px;
+        text-align: center;
+        line-height: 140px;
+        background: #FFF;
+    }
+
+    .slides-wrapper, .shares-wrapper {
+        width: 320px;
+        height: inherit;
+        margin: 0 auto;
+    }
+
+    .slides {
+        height: 30px;
+        background: $darkgray;
+        text-align: center;
+
+        .slide {
+            color: $cream;
+            margin: 0px 25px;
+            line-height: 36px;
+            font-size: 14px;
+            display: inline-block;
+        }
+    }
+
+    .shares {
+        height: 90px;
+        background: $cream;
+
+        .share {
+            color: #FFF;
+            width: 80px;
+            height: 50px;
+            margin: 20px 0 20px 17px;
+            font-size: 14px;
+            line-height: 50px;
+            text-align: center;
+            display: inline-block;
+            background: $orange;
+            text-transform: uppercase;
+        }
+    }
+
+    .about-the-book {
+        height: 300px;
+        background: $darkgray;
+        text-align: center;
+
+        .book-image {
+            width: 80px;
+            height: 140px;
+            margin-bottom: 30px;
+            background: $orange;
+            display: inline-block;
+            text-align: center;
+            line-height: 140px;
+        }
+
+        .book-description {
+            color: $cream;
+            width: 140px;
+            height: 140px;
+            margin-left: 30px;
+            margin-top: 5px;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: left;
+            display: inline-block;
+        }
+    }
+
+    /* set wrappers */
+
+    .inner-wrapper {
+        width: 260px;
+        height: inherit;
+        margin: 0 auto;
+    }
+
+/*    .twitter-wrapper, .instagram-wrapper, .contact-wrapper, .footer-wrapper {
+        width: 260px;
+        height: inherit;
+        margin: 0 auto;
+    }*/
+
+    /* end wrappers */
+
+    /* set references */
+
+    .youtube-reference, .instagram-reference, .contact-wrapper {
+        display: block;
+        text-align: center;
+
+        .handle, .time-stamp {
+            color: $cream;
+            font-size: 10px;
+            line-height: 12px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+    }
+
+    /* end references */
+
+    .twitter {
+        height: 295px;
+        background: $orange;
+
+        .tweet {
+            font-size: 11px;
+            line-height: 16px;
+            margin-bottom: 5px;
+        }
+
+        .handle, .time-stamp {
+            color: $cream;
+            font-size: 10px;
+            line-height: 12px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+    }
+
+    .instagram {
+        height: 350px;
+        background: $darkgray;
+
+        .instagram-image {
+            width: 240px;
+            height: 240px;
+            margin: 0 auto 10px;
+            background: #FFF;
+            text-align: center;
+            line-height: 240px;
+        }
+
+    }
+
+    .youtube {
+        height: 250px;
+        background: $orange;
+
+        .youtube-video {
+            width: 240px;
+            height: 140px;
+            margin: 0 auto 10px;
+            background: #FFF;
+            text-align: center;
+            line-height: 140px;
+        }
+    }
+
+    .contact {
+        height: 410px;
+        background: $darkgray;
+
+        .contact-section {
+            margin-bottom: 10px;
+        }
+
+        .contact-section-header, .contact-snippet {
+            display: block;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: left;
+            padding: 0;
+            border: none;
+            background: none;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .contact-section-header {
+            color: $orange;
+        }
+
+        .contact-snippet {
+            color: $cream;
+        }
+    }
+
+    .footer-separator {
+        height: 10px;
+        background: #FFF;
+    }
+
+    .box-heading {
+        color: #FFF;
+        padding: 10px 0 5px;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+}
+
+footer {
+    height: 210px;
+    background: $lightgray;
+
+    .inner-wrapper {
+        width: 260px;
+        height: inherit;
+        margin: 0 auto;
+    }
+
+    .random-white-block {
+        width: 30px;
+        height: 45px;
+        margin-bottom: 20px;
+        background: #FFF;
+        display: inline-block;
+    }
+
+    .copyright, .book-suggestion-text {
+        color: #FFF;
+        margin: 10px;
+        font-size: 10px;
+        line-height: 14px;
+        display: inline-block;
+    }
+
+    .book-suggestion {
+        height: 110px;
+        padding-top: 10px;
+        background: $darkgray;
+
+        .book-suggestion-image {
+            width: 70px;
+            height: 100px;
+            margin: 0 10px;
+            background: #FFF;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .book-suggestion-text {
+            margin: 0;
+            margin-top: 10px;
+            margin-left: -5px;
+            width: 127px;
+
+            .unleash-link {
+                color: $orange;
+                display: inline;
+                text-decoration: none;
+            }
+        }
+
+    }
+}
+
+.arrow-up {
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    border-bottom: 10px solid rgb(0, 0, 0);
+}
+
+.orange-outline {
+    color: $orange;
+    padding: 2.5% 7.5%;
+    border: 2px solid $orange;
+    display: inline-block;
+    font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
