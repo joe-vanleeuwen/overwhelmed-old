@@ -82,6 +82,7 @@ Stretch     ~ -1201px (see last slide in the .pdf for UI)
 
 body {
     width: 100%;
+    /*background: $cream;*/
     font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
 
 }
@@ -138,14 +139,19 @@ a.orange-outline:hover {
     background: #ee5025;
 }
 
-
+p.standard-copy {
+    font-size: 12px;
+    line-height: 16px;
+}
 
 
 /*@media (max-width: 460px)*/
 
 .temp {
-/*    width: 320px;
-    margin: 50px auto 0;*/
+    width: 320px;
+    min-height: 440px;
+    margin: 50px auto 0;
+    background: $cream;
 }
 
 header {
@@ -161,7 +167,7 @@ header {
         text-transform: uppercase;
     }
 
-    .hamburger {
+    .hamburger, .hamburger-x {
         width: 40px;
         height: inherit;
         background: $darkgray;
@@ -175,6 +181,14 @@ header {
             background: rgb(255, 255, 255);
             width: 55%;
         }
+    }
+
+    .hamburger-x {
+        color: rgb(255, 255, 255);
+        font-size: 45px;
+        font-weight: 100;
+        text-align: center;
+        line-height: 45px;
     }
 }
 
@@ -246,8 +260,6 @@ header {
             height: 140px;
             margin-left: 30px;
             margin-top: 5px;
-            font-size: 12px;
-            line-height: 16px;
             text-align: left;
             display: inline-block;
         }
@@ -363,25 +375,16 @@ header {
             color: $cream;
         }
     }
-
-    .footer-separator {
-        height: 10px;
-        background: #FFF;
-    }
-
-    .box-heading {
-        color: #FFF;
-        padding: 10px 0 5px;
-        font-size: 20px;
-        text-transform: uppercase;
-        text-align: center;
-    }
-
 }
 
 footer {
     height: 210px;
     background: $lightgray;
+
+    .footer-separator {
+        height: 10px;
+        background: #FFF;
+    }
 
     .inner-wrapper {
         width: 260px;
@@ -436,8 +439,16 @@ footer {
     }
 }
 
+.section-heading {
+    color: #FFF;
+    padding: 10px 0 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .arrow-up {
-    margin: 0 auto;
+    margin: -10px auto 0;
     width: 0;
     height: 0;
     border-left: 10px solid rgba(0, 0, 0, 0);
