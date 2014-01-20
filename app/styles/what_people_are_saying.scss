@@ -1,0 +1,83 @@
+$orange:     #ee5025;
+$darkgray:   #282a24;
+$lightgray:  #32342D;
+$cream:      #EFF0D1;
+
+.wrapper {
+
+	.copy {
+		font-size: 12px;
+		line-height: 13px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		font-family: "Memphis", serif;
+	}
+
+	.pastor-info, .testimonial-name {
+		color: #FFF;
+		font-size: 10px;
+	}
+
+	.from-pastors {
+		background: $darkgray;
+
+		.pastoral-review {
+			margin-bottom: 40px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.pastor-profile-pic {
+				height: 60px;
+				width: 60px;
+				margin-right: 14px;
+				display: inline-block;
+				background: #FFF;
+				text-align: center;
+				line-height: 55px;
+			}
+
+			.review {
+				width: 180px;
+				margin-top: -2px;
+				display: inline-block;
+
+				.review-copy {
+					color: $orange;
+					margin-bottom: 8px;
+				}
+
+				.pastor-info {
+
+					.name {
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+
+	.testimonials {
+		background: $orange;
+
+		.testimonial-copy {
+			color: $darkgray;
+			margin-bottom: 8px;
+		}
+
+		.testimonial-name {
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			display: block;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+
+

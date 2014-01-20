@@ -1,0 +1,87 @@
+$orange:     #ee5025;
+$darkgray:   #282a24;
+$lightgray:  #32342D;
+$cream:      #EFF0D1;
+
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url('../fonts/Gotham/Gotham-Black.otf');
+    src: local('Gotham'), local('Gotham'), url('../fonts/Gotham/Gotham-Black.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Memphas-ExtraBold';
+    src: url('../fonts/Memphas/Memphas-ExtraBold.otf');
+    src: local('Memphas'), local('Memphas'), url('../fonts/Memphas/Memphas-ExtraBold.otf') format('truetype');
+}
+
+
+// @font-face {
+//     font-family: 'Memphas';
+//     src: url('../fonts/Memphas/Memphas.otf');
+//     src: local('Memphas'), local('Memphas'), url('../fonts/Memphas/Memphas.otf') format('truetype');
+// }
+
+.wrapper {
+
+	.product {
+		text-align: center;
+		background: $darkgray;
+
+		.product-wrapper {
+			padding-top: 30px;
+			position: relative;
+		}
+
+		.product-number {
+			color: #FFF;
+			width: 40px;
+			height: 40px;
+			font-size: 26px;
+			line-height: 45px;
+			text-align: center;
+			background: $orange;
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-family: "Memphis", serif;
+		}
+
+		.product-image {
+			width: 120px;
+			height: 120px;
+			background: #FFF;
+			text-align: center;
+			line-height: 120px;
+			margin: 0 auto 20px;
+		}
+
+		.product-name {
+			color: $orange;
+			margin-bottom: 6px;
+			display: block;
+			font-size: 12px;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			font-family: "Gotham-Black", "Proxima Nova", Helvetica, sans-serif;
+		}
+
+		.product-description {
+			color: #FFF;
+			width: 180px;
+	        margin: 0 auto 15px;
+	        font-size: 10px;
+	        line-height: 14px;
+	        display: inline-block;
+		}
+
+		.download {
+			margin-bottom: 10px;
+		}
+	}
+
+	.product-separator {
+		height: 3px;
+		background: #FFF;
+	}
+}

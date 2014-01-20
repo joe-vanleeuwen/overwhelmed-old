@@ -1,0 +1,37 @@
+$orange:     #ee5025;
+$darkgray:   #282a24;
+$lightgray:  #32342D;
+$cream:      #EFF0D1;
+
+.wrapper {
+
+	.resources {
+		padding-top: 30px;
+		background: $orange;
+
+		.resource {
+			margin-bottom: 30px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.resource-image {
+			height: 60px;
+			width: 60px;
+			margin-right: 14px;
+			display: inline-block;
+			background: #FFF;
+			text-align: center;
+			line-height: 55px;
+		}
+
+		.resource-copy {
+			width: 180px;
+			margin-top: -3px;
+			display: inline-block;
+		}
+	}
+
+}
