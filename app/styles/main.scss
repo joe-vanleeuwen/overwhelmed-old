@@ -145,10 +145,10 @@ a {
 /*@media (max-width: 460px)*/
 
 .temp {
-    width: 320px;
+/*    width: 320px;
     min-height: 440px;
     margin: 50px auto 0;
-    background: $cream;
+    background: $cream;*/
 }
 
 /* header begin */
@@ -295,7 +295,7 @@ p.standard-copy {
 
 .orange-outline {
     color: $orange;
-    padding: 2.5% 7.5%;
+    padding: 8px 20px;
     border: 2px solid $orange;
     display: inline-block;
     font-size: 15px;
@@ -303,7 +303,7 @@ p.standard-copy {
     text-transform: uppercase;
 
     &:hover {
-        color: $darkgray;
+        color: #FFF;
         background: #ee5025;
     }
 }
@@ -316,7 +316,7 @@ p.standard-copy {
 
     h5 {
         color: $darkgray;
-        margin-top: 25px;
+        padding-top: 25px;
         letter-spacing: 4px;
         text-transform: uppercase;
         font-size: 10px;
@@ -325,7 +325,7 @@ p.standard-copy {
 
     h1 {
         color: $orange;
-        margin-bottom: 15px;
+        padding-bottom: 15px;
         text-transform: uppercase;
         font-weight: bold;
         line-height: 36px;

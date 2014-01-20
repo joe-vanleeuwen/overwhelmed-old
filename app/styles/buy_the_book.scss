@@ -1,0 +1,21 @@
+$orange:     #ee5025;
+$darkgray:   #282a24;
+$lightgray:  #32342D;
+$cream:      #EFF0D1;
+
+.wrapper {
+
+	.buy-the-book {
+		background: $cream;
+	}
+
+	.buy-book-options {
+		width: 240px;
+		height: 310px;
+		margin: 0 auto;
+		background: #FFF;
+		text-align: center;
+		line-height: 310px;
+
+	}
+}

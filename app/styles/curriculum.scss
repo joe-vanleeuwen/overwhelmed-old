@@ -24,6 +24,10 @@ $cream:      #EFF0D1;
 
 .wrapper {
 
+	.get-overwhelmed-curriculum {
+		background: $cream;
+	}
+
 	.product {
 		text-align: center;
 		background: $darkgray;
@@ -72,7 +76,7 @@ $cream:      #EFF0D1;
 	        margin: 0 auto 15px;
 	        font-size: 10px;
 	        line-height: 14px;
-	        display: inline-block;
+	        display: block;
 		}
 
 		.download {
