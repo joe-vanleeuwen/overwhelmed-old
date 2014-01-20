@@ -2,3 +2,43 @@ $orange:     #ee5025;
 $darkgray:   #282a24;
 $lightgray:  #32342D;
 $cream:      #EFF0D1;
+
+.wrapper {
+
+	.feel-overwhelmed {
+		background: $cream;
+
+		.overwhelmed-video {
+			height: 140px;
+			width: 240px;
+			margin: 0 auto;
+			background: #FFF;
+			text-align: center;
+			line-height: 140px;
+		}
+	}
+
+	.take-quiz {
+		background: $orange;
+	}
+
+	.get-updates {
+		text-align: center;
+		background: $darkgray;
+
+		.name, .email {
+			width: 100%;
+			padding: 7px 8px;
+			font-size: 12px;
+			margin-bottom: 8px;
+		}
+
+		.email {
+			margin-bottom: 20px;
+		}
+	}
+
+	.read-chapter-one {
+		background: $orange;
+	}
+}

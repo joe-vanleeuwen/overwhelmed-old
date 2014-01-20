@@ -80,6 +80,12 @@ Stretch     ~ -1201px (see last slide in the .pdf for UI)
     src: local('Gotham'), local('Gotham'), url('../fonts/Gotham/Gotham-Medium.otf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url('../fonts/Gotham/Gotham-Black.otf');
+    src: local('Gotham'), local('Gotham'), url('../fonts/Gotham/Gotham-Black.otf') format('truetype');
+}
+
 body {
     width: 100%;
     /*background: $cream;*/
@@ -87,7 +93,7 @@ body {
 
 }
 
-h1 {
+/*h1 {
     font-family: "Memphis", serif;
     font-size: 60px;
     font-weight: bold;
@@ -111,14 +117,14 @@ h3 {
     font-weight: bold;
     line-height: 30px;
     letter-spacing: 7px;
-}
+}*/
 
-p {
+/*p {
     font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
     font-weight: normal;
     font-size: 22px;
     line-height: 30px;
-}
+}*/
 
 a {
     text-decoration: none;
@@ -134,15 +140,6 @@ a {
     padding: 10px 20px;
 }*/
 
-a.orange-outline:hover {
-    color: $darkgray;
-    background: #ee5025;
-}
-
-p.standard-copy {
-    font-size: 12px;
-    line-height: 16px;
-}
 
 
 /*@media (max-width: 460px)*/
@@ -154,17 +151,22 @@ p.standard-copy {
     background: $cream;
 }
 
+/* header begin */
+
 header {
     height: 40px;
     background: $orange;
     position: relative;
 
-    .title {
+    h2 {
         font-size: 24px;
         display: inline-block;
         line-height: 43px;
         margin-left: 10px;
+        letter-spacing: 1px;
+        font-weight: bold;
         text-transform: uppercase;
+        font-family: "Memphis", serif;
     }
 
     .hamburger, .hamburger-x {
@@ -192,197 +194,11 @@ header {
     }
 }
 
-.wrapper {
+/* header end */
 
-    .main-image {
-        height: 140px;
-        text-align: center;
-        line-height: 140px;
-        background: #FFF;
-    }
-
-    .slides-wrapper, .shares-wrapper {
-        width: 320px;
-        height: inherit;
-        margin: 0 auto;
-    }
-
-    .slides {
-        height: 30px;
-        background: $darkgray;
-        text-align: center;
-
-        .slide {
-            color: $cream;
-            margin: 0px 25px;
-            line-height: 36px;
-            font-size: 14px;
-            display: inline-block;
-        }
-    }
-
-    .shares-wrapper {
-        text-align: center;
-    }
-
-    .shares {
-        height: 90px;
-        background: $cream;
-
-        .share {
-            color: #FFF;
-            width: 80px;
-            height: 50px;
-            margin: 20px 8px;
-            font-size: 14px;
-            line-height: 50px;
-            text-align: center;
-            display: inline-block;
-            background: $orange;
-            text-transform: uppercase;
-        }
-    }
-
-    .about-the-book {
-        height: 300px;
-        background: $darkgray;
-        text-align: center;
-
-        .book-image {
-            width: 80px;
-            height: 140px;
-            margin-bottom: 30px;
-            background: $orange;
-            display: inline-block;
-            text-align: center;
-            line-height: 140px;
-        }
-
-        .book-description {
-            color: $cream;
-            width: 140px;
-            height: 140px;
-            margin-left: 30px;
-            margin-top: 5px;
-            text-align: left;
-            display: inline-block;
-        }
-    }
-
-    /* set wrappers */
-
-    .inner-wrapper {
-        width: 260px;
-        height: inherit;
-        margin: 0 auto;
-    }
-
-/*    .twitter-wrapper, .instagram-wrapper, .contact-wrapper, .footer-wrapper {
-        width: 260px;
-        height: inherit;
-        margin: 0 auto;
-    }*/
-
-    /* end wrappers */
-
-    /* set references */
-
-    .youtube-reference, .instagram-reference, .contact-wrapper {
-        display: block;
-        text-align: center;
-
-        .handle, .time-stamp {
-            color: $cream;
-            font-size: 10px;
-            line-height: 12px;
-            display: inline-block;
-            margin-bottom: 15px;
-        }
-    }
-
-    /* end references */
-
-    .twitter {
-        height: 295px;
-        background: $orange;
-
-        .tweet {
-            font-size: 11px;
-            line-height: 16px;
-            margin-bottom: 5px;
-        }
-
-        .handle, .time-stamp {
-            color: $cream;
-            font-size: 10px;
-            line-height: 12px;
-            display: inline-block;
-            margin-bottom: 15px;
-        }
-
-    }
-
-    .instagram {
-        height: 350px;
-        background: $darkgray;
-
-        .instagram-image {
-            width: 240px;
-            height: 240px;
-            margin: 0 auto 10px;
-            background: #FFF;
-            text-align: center;
-            line-height: 240px;
-        }
-
-    }
-
-    .youtube {
-        height: 250px;
-        background: $orange;
-
-        .youtube-video {
-            width: 240px;
-            height: 140px;
-            margin: 0 auto 10px;
-            background: #FFF;
-            text-align: center;
-            line-height: 140px;
-        }
-    }
-
-    .contact {
-        height: 410px;
-        background: $darkgray;
-
-        .contact-section {
-            margin-bottom: 10px;
-        }
-
-        .contact-section-header, .contact-snippet {
-            display: block;
-            font-size: 12px;
-            line-height: 16px;
-            text-align: left;
-            padding: 0;
-            border: none;
-            background: none;
-            text-decoration: none;
-            font-weight: normal;
-        }
-
-        .contact-section-header {
-            color: $orange;
-        }
-
-        .contact-snippet {
-            color: $cream;
-        }
-    }
-}
+/* footer begin */
 
 footer {
-    height: 210px;
     background: $lightgray;
 
     .footer-separator {
@@ -443,22 +259,39 @@ footer {
     }
 }
 
-.section-heading {
-    color: #FFF;
-    padding: 10px 0 5px;
-    font-size: 20px;
-    text-transform: uppercase;
+/* footer end*/
+
+/* for the individual orange-outlined links */
+
+.stangard-block-orange-outline {
+    background: $darkgray;
+    padding: 20px 0;
     text-align: center;
 }
 
-.arrow-up {
-    margin: -10px auto 0;
-    width: 0;
-    height: 0;
-    border-left: 10px solid rgba(0, 0, 0, 0);
-    border-right: 10px solid rgba(0, 0, 0, 0);
-    border-bottom: 10px solid rgb(0, 0, 0);
+/* bottom padding for main sections*/
+
+.padding-bottom {
+    padding-bottom: 32px;
 }
+
+/* set wrappers */
+
+.inner-wrapper {
+    width: 260px;
+    height: inherit;
+    margin: 0 auto;
+}
+
+/* end wrappers */
+
+/* typography */
+
+p.standard-copy {
+    font-size: 12px;
+    line-height: 16px;
+}
+
 
 .orange-outline {
     color: $orange;
@@ -468,9 +301,58 @@ footer {
     font-size: 15px;
     font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
     text-transform: uppercase;
+
+    &:hover {
+        color: $darkgray;
+        background: #ee5025;
+    }
 }
 
+/* special heading <h1> */
 
+.special-heading {
+    background: $cream;
+    text-align: center;
+
+    h5 {
+        color: $darkgray;
+        margin-top: 25px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-family: "Gotham-Black", "Proxima Nova", Helvetica, sans-serif;
+    }
+
+    h1 {
+        color: $orange;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 36px;
+        letter-spacing: 1px;
+        font-size: 24px;
+        font-family: "Memphis", serif;
+    }
+}
+
+/* end special heading <h1> */
+
+/* section heading <h3> */
+
+h3 {
+    color: #FFF;
+    padding: 25px 0 15px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Memphis", serif;
+}
+
+/* end section heading <h3> */
+
+/* end typography */
 
 
 

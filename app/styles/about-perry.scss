@@ -6,11 +6,11 @@ $cream:      #EFF0D1;
 .wrapper {
 
 	.about-perry {
-		height: 400px;
 		background: $cream;
 
 		.section-heading {
 			color: $darkgray;
+			margin-bottom: 7px;
 		}
 
 		.perry-profile-pic {
@@ -37,6 +37,10 @@ $cream:      #EFF0D1;
 
 		.contact-perry-snippet, .contact-newspring-snippet {
 			margin-bottom: 3px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 
 		.perry-social-icon, .newspring-social-icon {
@@ -55,12 +59,11 @@ $cream:      #EFF0D1;
 	}
 
 	.about-newspring {
-		height: 260px;
 		background: $darkgray;
 
 		.newspring-background {
 			color: $cream;
-			margin: -5px 0 18px 0;
+			margin-bottom: 18px;
 		}
 
 		.contact-newspring {

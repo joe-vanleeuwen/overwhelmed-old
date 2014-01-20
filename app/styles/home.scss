@@ -1,0 +1,193 @@
+$orange:     #ee5025;
+$darkgray:   #282a24;
+$lightgray:  #32342D;
+$cream:      #EFF0D1;
+
+.wrapper {
+
+    .main-image {
+        height: 140px;
+        text-align: center;
+        line-height: 140px;
+        background: #FFF;
+    }
+
+    .arrow-up {
+        margin: -10px auto 0;
+        width: 0;
+        height: 0;
+        border-left: 10px solid rgba(0, 0, 0, 0);
+        border-right: 10px solid rgba(0, 0, 0, 0);
+        border-bottom: 10px solid rgb(0, 0, 0);
+    }
+
+    .slides-wrapper, .shares-wrapper {
+        width: 320px;
+        height: inherit;
+        margin: 0 auto;
+    }
+
+    .slides {
+        height: 30px;
+        background: $darkgray;
+        text-align: center;
+
+        .slide {
+            color: $cream;
+            margin: 0px 25px;
+            line-height: 36px;
+            font-size: 14px;
+            display: inline-block;
+        }
+    }
+
+    .shares-wrapper {
+        text-align: center;
+    }
+
+    .shares {
+        height: 90px;
+        background: $cream;
+
+        .share {
+            color: #FFF;
+            width: 80px;
+            height: 50px;
+            margin: 20px 8px;
+            font-size: 14px;
+            line-height: 50px;
+            text-align: center;
+            display: inline-block;
+            background: $orange;
+            text-transform: uppercase;
+        }
+    }
+
+    .about-the-book {
+        background: $darkgray;
+        text-align: center;
+
+        h3 {
+            padding-bottom: 30px;
+        }
+
+        .book-image {
+            width: 80px;
+            height: 140px;
+            margin-bottom: 30px;
+            background: $orange;
+            display: inline-block;
+            text-align: center;
+            line-height: 140px;
+        }
+
+        .book-description {
+            color: $cream;
+            width: 140px;
+            height: 140px;
+            margin-left: 30px;
+            margin-top: 5px;
+            text-align: left;
+            display: inline-block;
+        }
+    }
+
+    /* set references */
+
+    .youtube-reference, .instagram-reference, .contact-wrapper {
+        display: block;
+        text-align: center;
+
+        .handle, .time-stamp {
+            color: $cream;
+            font-size: 10px;
+            line-height: 12px;
+            display: inline-block;
+        }
+    }
+
+    /* end references */
+
+    .twitter {
+        background: $orange;
+
+        .tweet {
+            font-size: 11px;
+            line-height: 16px;
+            margin-bottom: 5px;
+        }
+
+        .handle, .time-stamp {
+            color: $cream;
+            font-size: 10px;
+            display: inline-block;
+        }
+
+        .time-stamp {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .instagram {
+        background: $darkgray;
+
+        .instagram-image {
+            width: 240px;
+            height: 240px;
+            margin: 0 auto 14px;
+            background: #FFF;
+            text-align: center;
+            line-height: 240px;
+        }
+
+    }
+
+    .youtube {
+        background: $orange;
+
+        .youtube-video {
+            width: 240px;
+            height: 140px;
+            margin: 0 auto 14px;
+            background: #FFF;
+            text-align: center;
+            line-height: 140px;
+        }
+    }
+
+    .contact {
+        background: $darkgray;
+
+        .contact-section {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .contact-section-header, .contact-snippet {
+            display: block;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: left;
+            padding: 0;
+            border: none;
+            background: none;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .contact-section-header {
+            color: $orange;
+        }
+
+        .contact-snippet {
+            color: $cream;
+        }
+    }
+}
